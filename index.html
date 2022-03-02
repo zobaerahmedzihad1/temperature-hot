@@ -20,6 +20,15 @@
         background-size: cover;
         height: 100vh;
       }
+      #error {
+        margin-left: 300px;
+        /* background-color: rgb(17, 26, 16); */
+        color: white;
+        width: 480px;
+        padding: 10px;
+        border-radius: 10px;
+        display: none;
+      }
     </style>
   </head>
 
@@ -44,7 +53,8 @@
           </div>
         </div>
       </form>
-      <div class="weather-status text-white text-center">
+      <h3 id="error">PLEASE WRITE A VALID CITY NAME</h3>
+      <div id="content" class="weather-status text-white text-center">
         <img
           id="icon"
           src="https://openweathermap.org/img/wn/02d@2x.png"
